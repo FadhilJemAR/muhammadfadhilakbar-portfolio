@@ -8,10 +8,13 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    margin: 0;
+}
+
 .top-content{
         background-color:var(--theme-color) ;
-        width: 100%;
-        position: fixed;
+        position: sticky;
         z-index: 2;
         left: 0;
         top: 0;
@@ -40,11 +43,8 @@ html{
 @media (min-width:648px) {
     body{
         background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
         margin: 0;
     }
-
     .top-content{
         font-size: 0.8em;
     }
@@ -52,7 +52,7 @@ html{
         min-height: 100vh;
         background-color: white;
         width: 80%;
-        margin: 0 120px;
+        margin: auto;
     }
     
     
@@ -97,6 +97,11 @@ html{
         align-items: start;
         gap: 0 14px;
         padding: 0 50px;
+    }
+
+    .mobile-menu{
+        display: none;
+        
     }
     
     .menu{
@@ -248,5 +253,25 @@ html{
 @media (max-width:648px) {
     .top-content{
         font-size: 0.79em;
+        padding-left: 25px;
+        padding-right:25px ;
+    }
+    .menu{
+        display: none;
+        
+    }
+
+    .mobile-menu{
+        display: flex;
+    }
+    .mobile-menu-avatar{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .main-container{
+        padding: 25px;
     }
 }
