@@ -12,12 +12,31 @@ body{
     margin: 0;
 }
 
+.menu-item{
+        background:none;
+        border: none;
+        font-size: 1.1em;
+        text-decoration: none;
+        color:black;
+        
+    }
+    
+    .menu-item:hover{
+         cursor: pointer;
+    }
+    
+    .menu-item.selected{
+       color:var(--theme-color) ;
+    }
+
  .project-item{
         width: 15em;
         height: 37em;
         border-radius: 5px;
         overflow: hidden;
     }
+
+    
     
     .project-item-img{
         width: 15em;
@@ -115,8 +134,12 @@ body{
         background-color: #f4f4f4;
         margin: 0;
     }
+    
     .top-content{
         font-size: 0.8em;
+    }
+    .profile{
+        display: none;
     }
     .main-container{
         min-height: 100vh;
@@ -194,22 +217,7 @@ body{
         gap:10px 0;
     }
     
-    .menu-item{
-        background:none;
-        border: none;
-        font-size: 1.1em;
-        text-decoration: none;
-        color:black;
-        
-    }
     
-    .menu-item:hover{
-         cursor: pointer;
-    }
-    
-    .menu-item.selected{
-       color:var(--theme-color) ;
-    }
     
     .main-content{
         padding: 19px;
@@ -274,11 +282,29 @@ body{
     }
 
     .main-container{
-        padding:20px 25px;
+        padding:0 25px;
     }
 
-    .project-item{
-        width: ;
+    .mobile-menu{
+        position: sticky;
+        width: 100%;
+        background-color: white;
+        top: 23px;
+        padding: 10px 0px;
+    }
+
+    .menu-list{
+        display: flex;
+        justify-content:space-between ;
+        font-size: 0.8em;
+    }
+    
+    .project{
+        scroll-margin-top: 60px;
+    }
+
+    .about{
+        scroll-margin-top: 300px;
     }
 
 }
