@@ -12,6 +12,59 @@ body{
     margin: 0;
 }
 
+ .project-item{
+        width: 15em;
+        height: 37em;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .project-item-img{
+        width: 15em;
+        height: 14em;
+        object-fit: cover;
+    }
+    
+    .project-item-title{
+        font-size: 1.1em;
+        margin: 7px 0;
+    }
+    
+    .project-item-description{
+        font-size:0.9em ;
+        line-height: 1.2em;
+    }
+    
+    .project-item-link{
+        display: flex;
+        flex-direction: column;
+        gap: 7px 0;
+    }
+    
+    .github,.page.link{
+        font-size: 0.8em;
+    }
+    
+    .not-available-link{
+        color:red
+    }
+    
+    
+    .project-item-tech-title{
+        font-size: 0.85em;
+    }
+    
+    .project-item-tech-list{
+        display: flex;
+        flex-wrap:wrap;
+        gap: 5px;
+    }
+    
+    .project-item-tech-list>i{
+       font-size: 1.4em;
+    }
+    
+
 .top-content{
         background-color:var(--theme-color) ;
         position: sticky;
@@ -38,6 +91,23 @@ body{
     cursor: pointer;
 }
 
+
+.skill-list{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2.3em;
+        gap: 10px;
+    }
+    
+    .contact{
+        padding-bottom: 50px;
+    }
+    
+    .contact-list{
+        font-size: 1.9em;
+        display: flex;
+        gap: 12px;
+    }
 
 
 @media (min-width:648px) {
@@ -178,75 +248,6 @@ body{
         margin-top: 30px;
     }
     
-    .project-item{
-        width: 15em;
-        height: 35em;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-    
-    .project-item-img{
-        width: 15em;
-        height: 14em;
-        object-fit: cover;
-    }
-    
-    .project-item-title{
-        font-size: 1em;
-        margin: 7px 0;
-    }
-    
-    .project-item-description{
-        font-size:0.8em ;
-        line-height: 1.2em;
-    }
-    
-    .project-item-link{
-        display: flex;
-        flex-direction: column;
-        gap: 7px 0;
-    }
-    
-    .github,.page.link{
-        font-size: 0.8em;
-    }
-    
-    .not-available-link{
-        color:red
-    }
-    
-    
-    .project-item-tech-title{
-        font-size: 0.85em;
-    }
-    
-    .project-item-tech-list{
-        display: flex;
-        flex-wrap:wrap;
-        gap: 5px;
-    }
-    
-    .project-item-tech-list>i{
-       font-size: 1.4em;
-    }
-    
-    .skill-list{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 2.3em;
-        gap: 10px;
-    }
-    
-    .contact{
-        padding-bottom: 50px;
-    }
-    
-    .contact-list{
-        font-size: 1.9em;
-        display: flex;
-        gap: 12px;
-    }
-
 }        
 
 
@@ -263,6 +264,7 @@ body{
 
     .mobile-menu{
         display: flex;
+        flex-direction: column;
     }
     .mobile-menu-avatar{
         width: 70px;
@@ -272,6 +274,11 @@ body{
     }
 
     .main-container{
-        padding: 25px;
+        padding:20px 25px;
     }
+
+    .project-item{
+        width: ;
+    }
+
 }
