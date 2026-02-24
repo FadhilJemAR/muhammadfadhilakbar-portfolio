@@ -13,3 +13,17 @@ menuList.forEach((element)=>{
       
     })
 })
+
+const topContent = document.querySelector('.top-content');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+const resizeObserver = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    // Ambil tinggi header pertama
+    const height = entry.borderBoxSize[0].blockSize;
+    // Set nilai 'top' header kedua sesuai tinggi header pertama
+    mobileMenu.style.top = `${height}px`;
+  }
+});
+
+resizeObserver.observe(topContent);

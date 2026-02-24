@@ -267,13 +267,8 @@ body{
     }
     .menu{
         display: none;
-        
     }
 
-    .mobile-menu{
-        display: flex;
-        flex-direction: column;
-    }
     .mobile-menu-avatar{
         width: 70px;
         height: 70px;
@@ -289,7 +284,6 @@ body{
         position: sticky;
         width: 100%;
         background-color: white;
-        top: 23px;
         padding: 10px 0px;
     }
 
