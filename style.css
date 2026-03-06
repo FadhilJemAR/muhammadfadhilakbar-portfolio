@@ -269,6 +269,10 @@ body{
         gap: 0px 50px;
 
     }
+
+    .project-swipe-guide{
+        display: none;
+    }
     
 }        
 
